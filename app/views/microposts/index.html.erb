@@ -1,0 +1,6 @@
+<% unless @user.nil? %>
+  <h1><%= @user.name %></h1>
+  <table class="microposts" summary="User microposts">
+    <%= render @user.microposts %>
+  </table>
+<% end %>
